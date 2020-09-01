@@ -1,0 +1,16 @@
+name: 'RC - Tag'
+description: 'Add a new annotated tag on any merge and master commit'
+# inputs:
+#   who-to-greet:  # id of input
+#     description: 'Who to greet'
+#     required: true
+#     default: 'World'
+# outputs:
+#   random-number: 
+#     description: "Random number"
+#     value: ${{ steps.random-number-generator.outputs.random-id }}
+runs:
+  using: "composite"
+  steps: 
+    - run: ${{ github.action_path }}/add-release-candidate-tag.sh
+      shell: bash

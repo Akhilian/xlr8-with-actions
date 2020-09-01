@@ -1,0 +1,12 @@
+name: Add RC tag
+
+on: [push]
+
+jobs:
+  tag_release_candidate_on_merge:
+    runs-on: ubuntu-latest
+    name: Add RC tag
+    steps:
+    - uses: actions/checkout@v2
+    - id: foo
+      uses: Akhilian/xlr8-with-actions@master
