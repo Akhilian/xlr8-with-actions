@@ -1,5 +1,7 @@
-name: 'RC - Tag'
+name: ''
 description: 'Add a new annotated tag on any merge and master commit'
+author: Adrien Saunier
+
 # inputs:
 #   who-to-greet:  # id of input
 #     description: 'Who to greet'
