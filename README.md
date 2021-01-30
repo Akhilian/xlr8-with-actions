@@ -1,18 +1,14 @@
-# XLR8 Metrics
+# Auto-release tag 🏷
 
-Automated measurement for spead metrics, extracted from the book "Accelerate".
+This project relies on Github Action to add a release a new tag when one or multiple commits are added to the main branch. 
 
-## Definitions and examples
+## Features
 
-### Deployement frequency
+**Add a release candidate tag**
 
-How often the code is the code deployed to you production environnement ?
+*A new tag is added when a commit is pushed on master or when a pull request is merged into the main branch. Then release candidate tag allows you to track the deployement of your changes.*
 
-### Lead time for change
 
-How much time does any change on your main branch take to be shipped to production ?
+## Installation
 
-### Examples
-
-![2 days of lead time](2days_lead_time.png)
-With this case, we have a 2 days lead time to measure
+See `.github/workflow` for a simple example
