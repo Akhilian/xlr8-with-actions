@@ -4,7 +4,7 @@ INPUT_COMMIT_USER_EMAIL=""
 
 # Informations about the release tag
 shortened_commit_sha=${GITHUB_SHA::8}
-release_tag_name="RC-${shortened_commit_sha}"
+release_tag_name="${RELEASE_CANDIDATE_PREFIX}-${shortened_commit_sha}"
 
 message="Applying a new release candidate tag 🏷 ${release_tag_name}"
 
